@@ -5,7 +5,7 @@ import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  base: '/Mhabv2/',
+  base: './',
   plugins: [
     // The React and Tailwind plugins are both required for Make, even if
     // Tailwind is not being actively used – do not remove them
@@ -15,7 +15,9 @@ export default defineConfig({
     {
       name: 'copy-404',
       closeBundle() {
-        fs.copyFileSync(path.resolve(__dirname, 'dist/index.html'), path.resolve(__dirname, 'dist/404.html'))
+        const dist = path.resolve(__dirname, 'dist')
+        fs.copyFileSync(path.join(dist, 'index.html'), path.join(dist, '404.html'))
+        fs.writeFileSync(path.join(dist, '.nojekyll'), '')
       },
     },
   ],
