@@ -1,0 +1,10 @@
+meta:
+  version: "18"
+
+build:
+  additionalCommands:
+    - npm run build
+
+run:
+  scriptName: server.js
+  containerPort: 80
