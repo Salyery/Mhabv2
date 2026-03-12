@@ -13,6 +13,26 @@ import { ScrollToTop } from './components/ScrollToTop';
 export default function App() {
   useEffect(() => {
     document.title = "MediaHUB - там, где медиапланы становятся решениями";
+    
+    // Add dynamic favicon
+    let link = document.querySelector("link[rel~='icon']") as HTMLLinkElement;
+    if (!link) {
+      link = document.createElement('link');
+      link.rel = 'icon';
+      document.head.appendChild(link);
+    }
+    const svgIcon = `<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="g" x1="4" y1="2" x2="28" y2="30" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#60A5FA"/>
+          <stop offset="0.5" stop-color="#A78BFA"/>
+          <stop offset="1" stop-color="#EC4899"/>
+        </linearGradient>
+      </defs>
+      <path d="M16 2L28 9V23L16 30L4 23V9L16 2Z" stroke="url(#g)" stroke-width="3" stroke-linejoin="round" fill="none"/>
+      <circle cx="16" cy="16" r="5" fill="url(#g)"/>
+    </svg>`;
+    link.href = `data:image/svg+xml,${encodeURIComponent(svgIcon)}`;
   }, []);
 
   return (
