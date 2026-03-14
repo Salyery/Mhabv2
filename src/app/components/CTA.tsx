@@ -294,7 +294,7 @@ export function CTA() {
                     <TrendingDown className="w-7 h-7 text-purple-400 relative z-10" />
                   </div>
                   <div className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-br from-white to-purple-200 mb-3 tracking-tight">
-                    COAST
+                    COST
                   </div>
                   <p className="text-purple-400 font-medium uppercase tracking-widest text-xs md:text-sm">Меньше</p>
                 </div>
@@ -439,7 +439,7 @@ export function CTA() {
               </div>
             </motion.div>
 
-            {/* 4. Bottom Center: COAST (50, 100) */}
+            {/* 4. Bottom Center: COST (50, 100) */}
             <motion.div initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.7, type: "spring" }} className="absolute top-[100%] left-[50%] -translate-x-1/2 -translate-y-1/2 z-20">
               <div className="absolute inset-0 bg-purple-500 blur-xl opacity-50 rounded-full" />
               <div className="relative w-14 h-14 lg:w-16 lg:h-16 rounded-full p-[2px] bg-gradient-to-br from-blue-400 to-purple-500 shadow-[0_0_20px_rgba(168,85,247,0.6)]">
@@ -448,7 +448,7 @@ export function CTA() {
                 </div>
               </div>
               <div className="absolute top-[calc(100%+12px)] lg:top-[calc(100%+20px)] left-1/2 -translate-x-1/2 text-center w-[200px] lg:w-[260px]">
-                <div className="text-2xl lg:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-purple-200 tracking-tight">COAST</div>
+                <div className="text-2xl lg:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-purple-200 tracking-tight">COST</div>
                 <p className="text-purple-400 font-bold uppercase tracking-widest text-[10px] lg:text-xs mt-1">Меньше</p>
               </div>
             </motion.div>
@@ -589,7 +589,7 @@ export function CTA() {
                       <TrendingDown className="w-5 h-5 text-purple-400" />
                     </div>
                   </div>
-                  <div className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-br from-white to-purple-200 mb-1">COAST</div>
+                  <div className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-br from-white to-purple-200 mb-1">COST</div>
                   <p className="text-purple-400 text-[10px] uppercase tracking-widest font-bold">Меньше</p>
                 </div>
 

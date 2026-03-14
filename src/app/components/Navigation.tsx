@@ -7,7 +7,7 @@ const navItems = [
   { label: 'Качество', href: '#quality' },
   { label: 'Точность', href: '#precision' },
   { label: 'Extra Profit', href: '#how-it-works' },
-  { label: 'Демонстрация', href: '#screencast' },
+  // { label: 'Демонстрация', href: '#screencast' }, — скрыто, раскомментировать когда понадобится
   { label: 'Маршрут', href: '#roadmap' },
   { label: 'Что дальше', href: '#future' },
 ];

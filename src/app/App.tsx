@@ -64,7 +64,7 @@ export default function App() {
         <Hero />
         <Comparison />
         <HowItWorks />
-        <Screencast />
+        {/* <Screencast /> — скрыто, раскомментировать когда понадобится */}
         <Roadmap />
         <Future />
         <CTA />
